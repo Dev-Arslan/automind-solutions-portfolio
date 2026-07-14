@@ -172,9 +172,10 @@
                         <textarea name="message" rows="5" placeholder="Enter your query here — tell us what you need help with..." required class="w-full bg-brand-dark border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand-accent transition"></textarea>
                     </div>
 
-                    <button type="submit" class="w-full bg-brand-accent hover:bg-blue-600 text-white font-semibold py-4 rounded-xl transition flex items-center justify-center gap-2">
-                        <i class="fa-solid fa-paper-plane"></i> Send Query to Our Team
-                    </button>
+                    <div id="toast" class="fixed bottom-6 right-6 z-[100] hidden items-center gap-3 bg-brand-card border border-green-500/30 text-white px-5 py-4 rounded-xl shadow-2xl shadow-black/40 transition-all duration-300 translate-y-4 opacity-0">
+                    <span class="bg-green-500/10 text-green-400 p-2 rounded-lg"><i class="fa-solid fa-check"></i></span>
+                    <span id="toast-message" class="text-sm font-medium">Your query has been sent!</span>
+                    </div>
                     <p class="text-xs text-gray-500 text-center">Submitting this form emails our team directly at arslanahmeddev350@gmail.com.</p>
                 </form>
             </div>
