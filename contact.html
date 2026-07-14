@@ -25,6 +25,31 @@
             }
         }
     </script>
+    <style>
+  #toast {
+    visibility: hidden;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #333;
+    color: #fff;
+    padding: 14px 20px;
+    border-radius: 8px;
+    font-family: sans-serif;
+  }
+  #toast.show {
+    visibility: visible;
+    animation: fadein 0.3s, fadeout 0.3s 2.7s;
+  }
+  @keyframes fadein {
+    from { bottom: 0; opacity: 0; }
+    to { bottom: 30px; opacity: 1; }
+  }
+  @keyframes fadeout {
+    from { bottom: 30px; opacity: 1; }
+    to { bottom: 0; opacity: 0; }
+  }
+</style>
 </head>
 <body class="bg-brand-dark text-gray-100 font-sans antialiased selection:bg-brand-accent selection:text-white">
 
@@ -171,11 +196,7 @@
                         <label class="block text-xs font-bold uppercase tracking-wider text-gray-400 mb-2">Your Query</label>
                         <textarea name="message" rows="5" placeholder="Enter your query here — tell us what you need help with..." required class="w-full bg-brand-dark border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand-accent transition"></textarea>
                     </div>
-
-                    <div id="toast" class="fixed bottom-6 right-6 z-[100] hidden items-center gap-3 bg-brand-card border border-green-500/30 text-white px-5 py-4 rounded-xl shadow-2xl shadow-black/40 transition-all duration-300 translate-y-4 opacity-0">
-                    <span class="bg-green-500/10 text-green-400 p-2 rounded-lg"><i class="fa-solid fa-check"></i></span>
-                    <span id="toast-message" class="text-sm font-medium">Your query has been sent!</span>
-                    </div>
+                   
                     <p class="text-xs text-gray-500 text-center">Submitting this form emails our team directly at arslanahmeddev350@gmail.com.</p>
                 </form>
             </div>
