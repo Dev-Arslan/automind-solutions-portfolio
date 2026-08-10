@@ -312,8 +312,8 @@ function chatKeydown(e) {
 function toggleChat() {
     const panel = document.getElementById('chat-panel');
     if (!panel) return;
-    panel.classList.toggle('open');
-    if (panel.classList.contains('open') && !panel.dataset.greeted) {
+    panel.classList.toggle('hidden');
+    if (!panel.classList.contains('hidden') && !panel.dataset.greeted) {
         panel.dataset.greeted = '1';
         setTimeout(() => appendChatMessage("Hi! I'm the AutoMind Assistant 👋 I can tell you about our projects, services, pricing, timelines, or the industries we work with.", 'bot'), 200);
         setTimeout(chatAskIntent, 700);
