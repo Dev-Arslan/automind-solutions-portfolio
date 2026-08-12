@@ -12,6 +12,17 @@ function pickInterest(value, btn) {
     btn.classList.add('is-active');
 }
 
+/* Pre-select the contact form's "Primary Interest" dropdown from a
+   ?interest= query param, e.g. a "Buy License" link from downloads.html. */
+function applyInterestFromQuery() {
+    const select = document.getElementById('interest-select');
+    if (!select) return;
+    const wanted = new URLSearchParams(window.location.search).get('interest');
+    if (!wanted) return;
+    const match = Array.from(select.options).find(o => o.value === wanted);
+    if (match) select.value = wanted;
+}
+
 /* ============ FAQ accordions ============ */
 function toggleFaq(btn) {
     const body = btn.nextElementSibling;
@@ -325,4 +336,5 @@ document.addEventListener('DOMContentLoaded', () => {
     loadConfig();
     mountTechLines();
     loadDownloads();
+    applyInterestFromQuery();
 });
