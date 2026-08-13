@@ -14,13 +14,21 @@ function pickInterest(value, btn) {
 
 /* Pre-select the contact form's "Primary Interest" dropdown from a
    ?interest= query param, e.g. a "Buy License" link from downloads.html. */
+const INTEREST_MESSAGE_HINTS = {
+    'TagScope License (TagNewsScanner)': 'Which edition (Daily or Licensed), and how many machines need a license key?',
+};
+
 function applyInterestFromQuery() {
     const select = document.getElementById('interest-select');
     if (!select) return;
     const wanted = new URLSearchParams(window.location.search).get('interest');
     if (!wanted) return;
     const match = Array.from(select.options).find(o => o.value === wanted);
-    if (match) select.value = wanted;
+    if (!match) return;
+    select.value = wanted;
+    const hint = INTEREST_MESSAGE_HINTS[wanted];
+    const message = document.querySelector('textarea[name="message"]');
+    if (hint && message) message.placeholder = hint;
 }
 
 /* ============ FAQ accordions ============ */
