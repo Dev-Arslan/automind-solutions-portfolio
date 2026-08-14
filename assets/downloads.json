@@ -1,13 +1,1 @@
-[
-    {
-        "name": "Example Software — Replace Me",
-        "description": "This is a placeholder entry. Use downloads-admin.html to generate a real entry with your software's actual name, description, image, and download link.",
-        "image": "assets/downloads/example.png",
-        "platform": "Windows",
-        "version": "v1.0.0",
-        "downloadUrl": "https://github.com/dev-arslan/YOUR_REPO/releases/download/v1.0.0/YourApp-Setup.exe",
-        "repoOwner": "dev-arslan",
-        "repoName": "YOUR_REPO",
-        "sourceUrl": "https://github.com/dev-arslan/YOUR_REPO"
-    }
-]
+[]
