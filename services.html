@@ -13,7 +13,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Website, Software & AI Automation Services | AutoMind Solutions">
     <meta name="twitter:description" content="Custom website design, software development, mobile apps, and AI automation bots — three fixed-price tiers of engineering engagement for businesses of any size, worldwide.">
-    <meta name="theme-color" content="#0B0F19">
+    <meta name="theme-color" content="#FFFFFF">
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -60,22 +60,23 @@
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2040%2040%27%3E%3Cdefs%3E%3ClinearGradient%20id%3D%27g%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%2740%27%20y2%3D%2740%27%3E%3Cstop%20offset%3D%270%25%27%20stop-color%3D%27%2360A5FA%27%2F%3E%3Cstop%20offset%3D%27100%25%27%20stop-color%3D%27%238B5CF6%27%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%2740%27%20height%3D%2740%27%20rx%3D%279%27%20fill%3D%27%230B0F19%27%2F%3E%3Cpath%20d%3D%27M20%207%20L8%2033%20M20%207%20L32%2033%20M12.5%2025%20H27.5%27%20stroke%3D%27url(%23g)%27%20stroke-width%3D%273.6%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%20fill%3D%27none%27%2F%3E%3Ccircle%20cx%3D%2720%27%20cy%3D%277%27%20r%3D%273%27%20fill%3D%27%2360A5FA%27%2F%3E%3Ccircle%20cx%3D%278%27%20cy%3D%2733%27%20r%3D%272.6%27%20fill%3D%27%238B5CF6%27%2F%3E%3Ccircle%20cx%3D%2732%27%20cy%3D%2733%27%20r%3D%272.6%27%20fill%3D%27%238B5CF6%27%2F%3E%3C%2Fsvg%3E">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Figtree:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script>
-        tailwind.config = { theme: { extend: {
-            colors: { brand: { dark: '#0B0F19', card: '#161B26', accent: '#3B82F6', glow: '#60A5FA', violet: '#8B5CF6', amber: '#F59E0B', cyan: '#22D3EE' } },
-            fontFamily: { display: ['"Space Grotesk"', 'sans-serif'], sans: ['"Inter"', 'sans-serif'], mono: ['"JetBrains Mono"', 'monospace'] }
-        } } }
+        tailwind.config = {
+            theme: { extend: {
+                colors: { brand: { dark: '#FFFFFF', card: '#F5F7FA', accent: '#0F6CBD', glow: '#0F6CBD', violet: '#7C3AED', amber: '#B45309', cyan: '#0E7490' } },
+                fontFamily: { display: ['"Figtree"', 'sans-serif'], sans: ['"IBM Plex Sans"', 'sans-serif'], mono: ['"JetBrains Mono"', 'monospace'] }
+            } }
+        }
     </script>
     <link rel="stylesheet" href="assets/style.css">
 </head>
-<body class="bg-brand-dark text-gray-100 font-sans antialiased selection:bg-brand-accent selection:text-white text-sm">
+<body class="bg-brand-dark text-gray-900 font-sans antialiased selection:bg-brand-accent selection:text-white text-sm">
 
-    <div class="scanline-overlay"></div>
-
-    <header class="fixed top-0 left-0 right-0 z-50 bg-brand-dark/85 backdrop-blur-md border-b border-gray-800">
+    <!-- HEADER / NAVIGATION -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/85 backdrop-blur-md border-b border-gray-200">
         <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
             <a href="index.html" class="flex items-center space-x-2.5">
                 <svg width="30" height="30" viewBox="0 0 40 40" fill="none">
@@ -84,30 +85,30 @@
                     <path d="M20 7 L8 33 M20 7 L32 33 M12.5 25 H27.5" stroke="url(#lgH)" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
                     <circle cx="20" cy="7" r="3" fill="#60A5FA"/><circle cx="8" cy="33" r="2.6" fill="#8B5CF6"/><circle cx="32" cy="33" r="2.6" fill="#8B5CF6"/>
                 </svg>
-                <span class="text-base font-display font-bold tracking-tight bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">AutoMind <span class="text-brand-glow">Solutions</span></span>
+                <span class="text-base font-display font-bold tracking-tight text-gray-900">AutoMind <span class="text-brand-accent">Solutions</span></span>
             </a>
-            <nav class="hidden md:flex items-center space-x-6 text-xs font-medium text-gray-400">
-                <a href="index.html" class="nav-link hover:text-white transition">Home</a>
+            <nav class="hidden md:flex items-center space-x-6 text-xs font-medium text-gray-600">
+                <a href="index.html" class="nav-link hover:text-gray-900 transition">Home</a>
                 <a href="services.html" class="nav-link nav-active">Services</a>
-                <a href="projects.html" class="nav-link hover:text-white transition">Projects</a>
-                <a href="infrastructure.html" class="nav-link hover:text-white transition">Infrastructure</a>
-                <a href="academy.html" class="nav-link hover:text-white transition">Academy</a>
-                <a href="downloads.html" class="nav-link hover:text-white transition">Downloads</a>
-                <a href="faq.html" class="nav-link hover:text-white transition">FAQ</a>
-                <a href="contact.html" class="nav-link hover:text-white transition">Contact</a>
+                <a href="projects.html" class="nav-link hover:text-gray-900 transition">Projects</a>
+                <a href="infrastructure.html" class="nav-link hover:text-gray-900 transition">Infrastructure</a>
+                <a href="academy.html" class="nav-link hover:text-gray-900 transition">Academy</a>
+                <a href="downloads.html" class="nav-link hover:text-gray-900 transition">Downloads</a>
+                <a href="faq.html" class="nav-link hover:text-gray-900 transition">FAQ</a>
+                <a href="contact.html" class="nav-link hover:text-gray-900 transition">Contact</a>
             </nav>
             <div class="flex items-center space-x-3">
-                <span class="hidden lg:flex items-center gap-2 text-[11px] font-mono text-gray-500 border border-gray-800 rounded-full px-3 py-1.5">
-                    <span class="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse"></span> Available for New Projects
+                <span class="hidden lg:flex items-center gap-2 text-[11px] font-medium text-gray-500 border border-gray-200 rounded-full px-3 py-1.5">
+                    <span class="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse"></span> Available for New Projects
                 </span>
-                <a href="contact.html" class="hidden sm:inline-block btn-gradient text-white text-xs font-semibold px-4 py-2 rounded-lg">Get Free Proposal</a>
-                <button onclick="toggleMobileNav()" class="md:hidden text-gray-300 text-xl" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+                <a href="contact.html" class="hidden sm:inline-block btn-gradient text-white text-xs font-semibold px-4 py-2 rounded-full">Get Free Proposal</a>
+                <button onclick="toggleMobileNav()" class="md:hidden text-gray-700 text-xl" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
             </div>
         </div>
-        <div id="mobile-nav" class="mobile-nav md:hidden border-t border-gray-800 bg-brand-dark/95">
-            <div class="flex flex-col px-6 py-4 space-y-3 text-sm text-gray-300">
+        <div id="mobile-nav" class="mobile-nav md:hidden border-t border-gray-200 bg-white/95">
+            <div class="flex flex-col px-6 py-4 space-y-3 text-sm text-gray-600">
                 <a href="index.html">Home</a>
-                <a href="services.html" class="text-white">Services</a>
+                <a href="services.html" class="text-gray-900 font-semibold">Services</a>
                 <a href="projects.html">Projects</a>
                 <a href="infrastructure.html">Infrastructure & VoIP</a>
                 <a href="academy.html">Academy</a>
@@ -119,14 +120,14 @@
     </header>
 
     <!-- PAGE BANNER -->
-    <section class="relative pt-28 pb-12 overflow-hidden border-b border-gray-800">
+    <section class="relative pt-28 pb-12 overflow-hidden border-b border-gray-200">
         <div class="tech-lines-mount absolute inset-0 pointer-events-none opacity-70"></div>
         <div class="absolute inset-0 dot-grid opacity-15 pointer-events-none"></div>
         <div class="absolute top-0 -right-24 w-72 h-72 bg-brand-violet/15 rounded-full blur-3xl animate-float pointer-events-none"></div>
         <div class="max-w-5xl mx-auto px-6 relative z-10 text-center">
             <span class="text-[11px] font-mono text-brand-glow">// SERVICES</span>
-            <h1 class="font-display text-2xl md:text-4xl font-bold text-white mt-2">Full-Stack Technology Services</h1>
-            <p class="text-gray-400 text-sm mt-3 max-w-xl mx-auto">Websites, custom software, mobile apps, and intelligent automation — engineered for how your business actually operates.</p>
+            <h1 class="font-display text-2xl md:text-4xl font-bold text-gray-900 mt-2">Full-Stack Technology Services</h1>
+            <p class="text-gray-500 text-sm mt-3 max-w-xl mx-auto">Websites, custom software, mobile apps, and intelligent automation — engineered for how your business actually operates.</p>
         </div>
     </section>
 
@@ -134,80 +135,80 @@
     <section class="py-16">
         <div class="max-w-7xl mx-auto px-6 reveal">
             <div class="grid md:grid-cols-3 gap-8 items-stretch">
-                <div class="corner-brackets bg-brand-card border border-gray-800 p-8 rounded-2xl card-hover flex flex-col">
+                <div class="corner-brackets bg-brand-card border border-gray-200 p-8 rounded-2xl card-hover flex flex-col">
                     <div class="flex items-center justify-between mb-5">
                         <div class="text-brand-glow text-2xl"><i class="fa-solid fa-globe"></i></div>
-                        <span class="font-mono text-xs text-gray-600">01</span>
+                        <span class="font-mono text-xs text-gray-300">01</span>
                     </div>
                     <span class="text-[11px] font-bold uppercase tracking-widest text-gray-500 mb-2">Starter</span>
-                    <h3 class="font-display text-lg font-bold mb-2.5">Websites & Automation Bots</h3>
-                    <p class="text-gray-400 text-xs leading-relaxed mb-4 flex-1">A professional business website plus a single automation — lead-response bot, booking flow, or a repetitive daily task — live in days, not months. The fastest way to see ROI before committing further.</p>
+                    <h3 class="font-display text-lg font-bold mb-2.5 text-gray-900">Websites & Automation Bots</h3>
+                    <p class="text-gray-500 text-xs leading-relaxed mb-4 flex-1">A professional business website plus a single automation — lead-response bot, booking flow, or a repetitive daily task — live in days, not months. The fastest way to see ROI before committing further.</p>
                     <div class="flex flex-wrap gap-2 mb-6">
                         <span class="text-[11px] font-mono text-brand-glow bg-blue-500/10 px-2.5 py-1 rounded">Web</span>
                         <span class="text-[11px] font-mono text-brand-glow bg-blue-500/10 px-2.5 py-1 rounded">Python / OpenAI</span>
                     </div>
-                    <a href="contact.html" class="text-center bg-brand-dark border border-gray-700 hover:border-brand-accent text-gray-200 font-semibold text-sm px-5 py-2.5 rounded-lg transition">Get a Quote</a>
+                    <a href="contact.html" class="text-center bg-brand-dark border border-gray-300 hover:border-brand-accent text-gray-700 font-semibold text-sm px-5 py-2.5 rounded-lg transition">Get a Quote</a>
                 </div>
 
                 <div class="corner-brackets bg-brand-card border-2 border-brand-accent p-8 rounded-2xl card-hover animate-pulse-glow flex flex-col relative md:scale-105 z-10">
                     <span class="absolute -top-3 right-6 bg-gradient-to-r from-brand-accent to-violet-500 text-white text-[11px] font-bold px-3 py-1 rounded-full">Most Requested</span>
                     <div class="flex items-center justify-between mb-5">
                         <div class="text-violet-400 text-2xl"><i class="fa-solid fa-layer-group"></i></div>
-                        <span class="font-mono text-xs text-gray-600">02</span>
+                        <span class="font-mono text-xs text-gray-300">02</span>
                     </div>
                     <span class="text-[11px] font-bold uppercase tracking-widest text-gray-500 mb-2">Growth</span>
-                    <h3 class="font-display text-lg font-bold mb-2.5">Custom Software & Mobile Apps</h3>
-                    <p class="text-gray-400 text-xs leading-relaxed mb-4 flex-1">A full internal tool or customer-facing mobile app that replaces spreadsheets and disconnected systems — built around how your team already works, with everything wired together.</p>
+                    <h3 class="font-display text-lg font-bold mb-2.5 text-gray-900">Custom Software & Mobile Apps</h3>
+                    <p class="text-gray-500 text-xs leading-relaxed mb-4 flex-1">A full internal tool or customer-facing mobile app that replaces spreadsheets and disconnected systems — built around how your team already works, with everything wired together.</p>
                     <div class="flex flex-wrap gap-2 mb-6">
                         <span class="text-[11px] font-mono text-violet-400 bg-violet-500/10 px-2.5 py-1 rounded">C# / .NET Core</span>
                         <span class="text-[11px] font-mono text-violet-400 bg-violet-500/10 px-2.5 py-1 rounded">Android / iOS</span>
                     </div>
-                    <a href="contact.html" class="text-center bg-brand-accent hover:bg-blue-600 text-white font-semibold text-sm px-5 py-2.5 rounded-lg transition">Get a Quote</a>
+                    <a href="contact.html" class="text-center bg-brand-accent hover:brightness-110 text-white font-semibold text-sm px-5 py-2.5 rounded-lg transition">Get a Quote</a>
                 </div>
 
-                <div class="corner-brackets bg-brand-card border border-gray-800 p-8 rounded-2xl card-hover flex flex-col">
+                <div class="corner-brackets bg-brand-card border border-gray-200 p-8 rounded-2xl card-hover flex flex-col">
                     <div class="flex items-center justify-between mb-5">
                         <div class="text-brand-glow text-2xl"><i class="fa-solid fa-diagram-project"></i></div>
-                        <span class="font-mono text-xs text-gray-600">03</span>
+                        <span class="font-mono text-xs text-gray-300">03</span>
                     </div>
                     <span class="text-[11px] font-bold uppercase tracking-widest text-gray-500 mb-2">Custom / Enterprise</span>
-                    <h3 class="font-display text-lg font-bold mb-2.5">Full-Stack Digital Transformation</h3>
-                    <p class="text-gray-400 text-xs leading-relaxed mb-4 flex-1">End-to-end builds spanning websites, mobile apps, multi-bot automation systems, and office network/VoIP infrastructure — for teams scaling across locations or field staff.</p>
+                    <h3 class="font-display text-lg font-bold mb-2.5 text-gray-900">Full-Stack Digital Transformation</h3>
+                    <p class="text-gray-500 text-xs leading-relaxed mb-4 flex-1">End-to-end builds spanning websites, mobile apps, multi-bot automation systems, and office network/VoIP infrastructure — for teams scaling across locations or field staff.</p>
                     <div class="flex flex-wrap gap-2 mb-6">
                         <span class="text-[11px] font-mono text-brand-glow bg-blue-500/10 px-2.5 py-1 rounded">Web + Mobile + Bots</span>
                         <span class="text-[11px] font-mono text-brand-glow bg-blue-500/10 px-2.5 py-1 rounded">Network / VoIP</span>
                     </div>
-                    <a href="contact.html" class="text-center bg-brand-dark border border-gray-700 hover:border-brand-accent text-gray-200 font-semibold text-sm px-5 py-2.5 rounded-lg transition">Talk to Us</a>
+                    <a href="contact.html" class="text-center bg-brand-dark border border-gray-300 hover:border-brand-accent text-gray-700 font-semibold text-sm px-5 py-2.5 rounded-lg transition">Talk to Us</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- WHATSAPP BUSINESS PROFILE AUTOMATION & MANAGEMENT -->
-    <section id="whatsapp-automation" class="py-16 border-t border-gray-800" itemscope itemtype="https://schema.org/Service">
+    <section id="whatsapp-automation" class="py-16 border-t border-gray-200" itemscope itemtype="https://schema.org/Service">
         <div class="max-w-4xl mx-auto px-6 reveal">
-            <div class="corner-brackets bg-brand-card border border-gray-800 rounded-2xl p-6 md:p-8">
+            <div class="corner-brackets bg-brand-card border border-gray-200 rounded-2xl p-6 md:p-8">
                 <div class="flex items-center justify-between flex-wrap gap-2 mb-3">
                     <span class="text-[11px] font-mono text-brand-glow bg-blue-500/10 px-3 py-1 rounded-full inline-flex items-center gap-2">
-                        <span class="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse"></span> ACTIVE SERVICE
+                        <span class="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse"></span> ACTIVE SERVICE
                     </span>
                     <span class="text-[10px] font-mono text-gray-500">// WHATSAPP_AUTOMATION</span>
                 </div>
-                <h2 itemprop="name" class="font-display text-xl md:text-2xl font-bold text-white mb-2">WhatsApp Business Profile Automation &amp; Management</h2>
-                <p itemprop="description" class="text-gray-400 text-sm leading-relaxed mb-6 max-w-2xl">Turn your WhatsApp Business profile into a 24/7 sales and support channel. We set up automated replies, guided conversation flows, and ongoing profile management — tracked live in a business dashboard, from Basic auto-reply setup to a full multi-agent suite.</p>
+                <h2 itemprop="name" class="font-display text-xl md:text-2xl font-bold text-gray-900 mb-2">WhatsApp Business Profile Automation &amp; Management</h2>
+                <p itemprop="description" class="text-gray-500 text-sm leading-relaxed mb-6 max-w-2xl">Turn your WhatsApp Business profile into a 24/7 sales and support channel. We set up automated replies, guided conversation flows, and ongoing profile management — tracked live in a business dashboard, from Basic auto-reply setup to a full multi-agent suite.</p>
 
                 <div class="grid sm:grid-cols-3 gap-3 mb-6">
-                    <div class="bg-brand-dark border border-gray-800 rounded-xl p-4">
+                    <div class="bg-brand-dark border border-gray-200 rounded-xl p-4">
                         <div class="flex items-center justify-between mb-2">
                             <span class="text-[10px] font-mono font-bold text-brand-glow bg-blue-500/10 px-2 py-0.5 rounded">BASIC</span>
                             <i class="fa-brands fa-whatsapp text-brand-glow text-sm"></i>
                         </div>
-                        <h3 class="font-display text-xs font-bold text-white mb-1.5">Auto-Reply &amp; Setup</h3>
+                        <h3 class="font-display text-xs font-bold text-gray-900 mb-1.5">Auto-Reply &amp; Setup</h3>
                         <p class="text-[11px] text-gray-500 leading-relaxed mb-2.5">Profile &amp; catalog setup, booking website, and instant FAQ auto-replies.</p>
                         <div class="flex flex-wrap gap-1.5">
-                            <span class="text-[9px] font-mono text-gray-500 border border-gray-800 rounded px-1.5 py-0.5">Setup</span>
-                            <span class="text-[9px] font-mono text-gray-500 border border-gray-800 rounded px-1.5 py-0.5">Auto-Reply</span>
-                            <span class="text-[9px] font-mono text-gray-500 border border-gray-800 rounded px-1.5 py-0.5">Live Website &amp; Booking Link</span>
+                            <span class="text-[9px] font-mono text-gray-500 border border-gray-200 rounded px-1.5 py-0.5">Setup</span>
+                            <span class="text-[9px] font-mono text-gray-500 border border-gray-200 rounded px-1.5 py-0.5">Auto-Reply</span>
+                            <span class="text-[9px] font-mono text-gray-500 border border-gray-200 rounded px-1.5 py-0.5">Live Website &amp; Booking Link</span>
                         </div>
                     </div>
 
@@ -217,99 +218,100 @@
                             <span class="text-[10px] font-mono font-bold text-violet-400 bg-violet-500/10 px-2 py-0.5 rounded">MID</span>
                             <i class="fa-solid fa-comments text-violet-400 text-sm"></i>
                         </div>
-                        <h3 class="font-display text-xs font-bold text-white mb-1.5">Smart Conversations &amp; Dashboard</h3>
+                        <h3 class="font-display text-xs font-bold text-gray-900 mb-1.5">Smart Conversations &amp; Dashboard</h3>
                         <p class="text-[11px] text-gray-500 leading-relaxed mb-2.5">Order, booking &amp; lead-capture flows with a live leads sheet and AI agent integration.</p>
                         <div class="flex flex-wrap gap-1.5">
-                            <span class="text-[9px] font-mono text-gray-500 border border-gray-800 rounded px-1.5 py-0.5">Automated &amp; Manual Booking</span>
-                            <span class="text-[9px] font-mono text-gray-500 border border-gray-800 rounded px-1.5 py-0.5">Leads Capture</span>
-                            <span class="text-[9px] font-mono text-gray-500 border border-gray-800 rounded px-1.5 py-0.5">Sheet Stats</span>
+                            <span class="text-[9px] font-mono text-gray-500 border border-gray-200 rounded px-1.5 py-0.5">Automated &amp; Manual Booking</span>
+                            <span class="text-[9px] font-mono text-gray-500 border border-gray-200 rounded px-1.5 py-0.5">Leads Capture</span>
+                            <span class="text-[9px] font-mono text-gray-500 border border-gray-200 rounded px-1.5 py-0.5">Sheet Stats</span>
                         </div>
                     </div>
 
-                    <div class="bg-brand-dark border border-gray-800 rounded-xl p-4">
+                    <div class="bg-brand-dark border border-gray-200 rounded-xl p-4">
                         <div class="flex items-center justify-between mb-2">
                             <span class="text-[10px] font-mono font-bold text-brand-glow bg-blue-500/10 px-2 py-0.5 rounded">FULL</span>
                             <i class="fa-solid fa-chart-line text-brand-glow text-sm"></i>
                         </div>
-                        <h3 class="font-display text-xs font-bold text-white mb-1.5">Complete Business Suite</h3>
+                        <h3 class="font-display text-xs font-bold text-gray-900 mb-1.5">Complete Business Suite</h3>
                         <p class="text-[11px] text-gray-500 leading-relaxed mb-2.5">Broadcasts, campaigns, and a multi-agent inbox backed by full performance analytics.</p>
                         <div class="flex flex-wrap gap-1.5">
-                            <span class="text-[9px] font-mono text-gray-500 border border-gray-800 rounded px-1.5 py-0.5">Broadcasts</span>
-                            <span class="text-[9px] font-mono text-gray-500 border border-gray-800 rounded px-1.5 py-0.5">Analytics</span>
+                            <span class="text-[9px] font-mono text-gray-500 border border-gray-200 rounded px-1.5 py-0.5">Broadcasts</span>
+                            <span class="text-[9px] font-mono text-gray-500 border border-gray-200 rounded px-1.5 py-0.5">Analytics</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="bg-brand-dark border border-gray-800 rounded-xl p-4 mb-6">
-                    <div class="flex items-center justify-between mb-3 pb-2.5 border-b border-gray-800">
+                <div class="bg-brand-dark border border-gray-200 rounded-xl p-4 mb-6">
+                    <div class="flex items-center justify-between mb-3 pb-2.5 border-b border-gray-200">
                         <div class="flex items-center gap-2">
                             <div class="w-6 h-6 rounded-full bg-[#25D366]/20 flex items-center justify-center shrink-0"><i class="fa-brands fa-whatsapp text-[#25D366] text-[10px]"></i></div>
-                            <span class="text-white text-xs font-semibold">One Dashboard for All</span>
+                            <span class="text-gray-900 text-xs font-semibold">One Dashboard for All</span>
                         </div>
-                        <span class="flex items-center gap-1.5 text-[10px] font-mono text-green-400"><span class="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse"></span> Live</span>
+                        <span class="flex items-center gap-1.5 text-[10px] font-mono text-green-600"><span class="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse"></span> Live</span>
                     </div>
                     <div class="grid grid-cols-4 gap-2.5">
-                        <div class="bg-brand-card border border-gray-800 rounded-lg p-2.5 text-center">
+                        <div class="bg-brand-card border border-gray-200 rounded-lg p-2.5 text-center">
                             <div class="text-[9px] text-gray-500 uppercase tracking-wider mb-1">Chats</div>
-                            <div class="text-sm font-display font-bold text-white">28</div>
+                            <div class="text-sm font-display font-bold text-gray-900">28</div>
                         </div>
-                        <div class="bg-brand-card border border-gray-800 rounded-lg p-2.5 text-center">
+                        <div class="bg-brand-card border border-gray-200 rounded-lg p-2.5 text-center">
                             <div class="text-[9px] text-gray-500 uppercase tracking-wider mb-1">Orders</div>
-                            <div class="text-sm font-display font-bold text-white">14</div>
+                            <div class="text-sm font-display font-bold text-gray-900">14</div>
                         </div>
-                        <div class="bg-brand-card border border-gray-800 rounded-lg p-2.5 text-center">
+                        <div class="bg-brand-card border border-gray-200 rounded-lg p-2.5 text-center">
                             <div class="text-[9px] text-gray-500 uppercase tracking-wider mb-1">Response</div>
                             <div class="text-sm font-display font-bold text-brand-glow">100%</div>
                         </div>
-                        <div class="bg-brand-card border border-gray-800 rounded-lg p-2.5 text-center">
+                        <div class="bg-brand-card border border-gray-200 rounded-lg p-2.5 text-center">
                             <div class="text-[9px] text-gray-500 uppercase tracking-wider mb-1">Avg. Reply</div>
-                            <div class="text-sm font-display font-bold text-violet-400">&lt; 2s</div>
+                            <div class="text-sm font-display font-bold text-violet-500">&lt; 2s</div>
                         </div>
                     </div>
-                    <p class="text-center text-[10px] text-gray-600 mt-2.5">Illustrative dashboard, not live client data.</p>
+                    <p class="text-center text-[10px] text-gray-500 mt-2.5">Illustrative dashboard, not live client data.</p>
                 </div>
 
-                <a href="contact.html" class="inline-flex items-center gap-2 bg-brand-accent hover:bg-blue-600 text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition">Automate My WhatsApp Profile <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                <a href="contact.html" class="inline-flex items-center gap-2 bg-brand-accent hover:brightness-110 text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition">Automate My WhatsApp Profile <i class="fa-solid fa-arrow-right text-xs"></i></a>
             </div>
         </div>
     </section>
 
     <!-- COMPARISON TABLE -->
-    <section class="py-16 bg-brand-dark/50 border-t border-gray-800">
+    <section class="py-16 bg-brand-dark/50 border-t border-gray-200">
         <div class="max-w-4xl mx-auto px-6 reveal">
-            <h2 class="font-display text-xl md:text-2xl font-bold text-center mb-8">What's Included, At a Glance</h2>
-            <div class="corner-brackets bg-brand-card border border-gray-800 rounded-xl overflow-x-auto">
+            <h2 class="font-display text-xl md:text-2xl font-bold text-center mb-8 text-gray-900">What's Included, At a Glance</h2>
+            <div class="corner-brackets bg-brand-card border border-gray-200 rounded-xl overflow-x-auto">
                 <table class="w-full text-xs text-left min-w-[480px]">
                     <thead>
-                        <tr class="border-b border-gray-800 text-gray-400 font-mono text-[11px] uppercase">
+                        <tr class="border-b border-gray-200 text-gray-500 font-mono text-[11px] uppercase">
                             <th class="py-3 px-4 font-medium">Included</th>
                             <th class="py-3 px-4 font-medium text-center">Starter</th>
                             <th class="py-3 px-4 font-medium text-center">Growth</th>
                             <th class="py-3 px-4 font-medium text-center">Enterprise</th>
                         </tr>
                     </thead>
-                    <tbody class="text-gray-300">
-                        <tr class="border-b border-gray-800"><td class="py-3 px-4">Business Website</td><td class="text-center text-green-400"><i class="fa-solid fa-check"></i></td><td class="text-center text-green-400"><i class="fa-solid fa-check"></i></td><td class="text-center text-green-400"><i class="fa-solid fa-check"></i></td></tr>
-                        <tr class="border-b border-gray-800"><td class="py-3 px-4">Single Automation Bot</td><td class="text-center text-green-400"><i class="fa-solid fa-check"></i></td><td class="text-center text-green-400"><i class="fa-solid fa-check"></i></td><td class="text-center text-green-400"><i class="fa-solid fa-check"></i></td></tr>
-                        <tr class="border-b border-gray-800"><td class="py-3 px-4">Custom Desktop Software</td><td class="text-center text-gray-600">—</td><td class="text-center text-green-400"><i class="fa-solid fa-check"></i></td><td class="text-center text-green-400"><i class="fa-solid fa-check"></i></td></tr>
-                        <tr class="border-b border-gray-800"><td class="py-3 px-4">Mobile App (Android / iOS)</td><td class="text-center text-gray-600">—</td><td class="text-center text-green-400"><i class="fa-solid fa-check"></i></td><td class="text-center text-green-400"><i class="fa-solid fa-check"></i></td></tr>
-                        <tr class="border-b border-gray-800"><td class="py-3 px-4">Multi-Bot Automation Systems</td><td class="text-center text-gray-600">—</td><td class="text-center text-gray-600">—</td><td class="text-center text-green-400"><i class="fa-solid fa-check"></i></td></tr>
-                        <tr><td class="py-3 px-4">Network / VoIP Infrastructure</td><td class="text-center text-gray-600">—</td><td class="text-center text-gray-600">—</td><td class="text-center text-green-400"><i class="fa-solid fa-check"></i></td></tr>
+                    <tbody class="text-gray-600">
+                        <tr class="border-b border-gray-200"><td class="py-3 px-4">Business Website</td><td class="text-center text-green-600"><i class="fa-solid fa-check"></i></td><td class="text-center text-green-600"><i class="fa-solid fa-check"></i></td><td class="text-center text-green-600"><i class="fa-solid fa-check"></i></td></tr>
+                        <tr class="border-b border-gray-200"><td class="py-3 px-4">Single Automation Bot</td><td class="text-center text-green-600"><i class="fa-solid fa-check"></i></td><td class="text-center text-green-600"><i class="fa-solid fa-check"></i></td><td class="text-center text-green-600"><i class="fa-solid fa-check"></i></td></tr>
+                        <tr class="border-b border-gray-200"><td class="py-3 px-4">Custom Desktop Software</td><td class="text-center text-gray-300">—</td><td class="text-center text-green-600"><i class="fa-solid fa-check"></i></td><td class="text-center text-green-600"><i class="fa-solid fa-check"></i></td></tr>
+                        <tr class="border-b border-gray-200"><td class="py-3 px-4">Mobile App (Android / iOS)</td><td class="text-center text-gray-300">—</td><td class="text-center text-green-600"><i class="fa-solid fa-check"></i></td><td class="text-center text-green-600"><i class="fa-solid fa-check"></i></td></tr>
+                        <tr class="border-b border-gray-200"><td class="py-3 px-4">Multi-Bot Automation Systems</td><td class="text-center text-gray-300">—</td><td class="text-center text-gray-300">—</td><td class="text-center text-green-600"><i class="fa-solid fa-check"></i></td></tr>
+                        <tr><td class="py-3 px-4">Network / VoIP Infrastructure</td><td class="text-center text-gray-300">—</td><td class="text-center text-gray-300">—</td><td class="text-center text-green-600"><i class="fa-solid fa-check"></i></td></tr>
                     </tbody>
                 </table>
             </div>
         </div>
     </section>
 
-    <section class="py-16 border-t border-gray-800">
+    <section class="py-16 border-t border-gray-200">
         <div class="max-w-3xl mx-auto px-6 reveal text-center">
-            <h2 class="font-display text-xl md:text-2xl font-bold text-white mb-3">Not sure which tier fits?</h2>
-            <p class="text-gray-400 text-sm mb-6">Tell us what you're working with — we'll recommend a starting point on a free call.</p>
-            <a href="contact.html" class="inline-block btn-gradient text-white text-sm font-semibold px-7 py-3 rounded-lg">Book a Free Consultation</a>
+            <h2 class="font-display text-xl md:text-2xl font-bold text-gray-900 mb-3">Not sure which tier fits?</h2>
+            <p class="text-gray-500 text-sm mb-6">Tell us what you're working with — we'll recommend a starting point on a free call.</p>
+            <a href="contact.html" class="inline-block btn-gradient text-white text-sm font-semibold px-7 py-3 rounded-full">Book a Free Consultation</a>
         </div>
     </section>
 
-    <footer class="bg-brand-dark border-t border-gray-900 py-12 text-xs text-gray-500">
+    <!-- FOOTER -->
+    <footer class="bg-white border-t border-gray-200 py-12 text-xs text-gray-500">
         <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
             <div class="flex items-start gap-2.5">
                 <svg width="26" height="26" viewBox="0 0 40 40" fill="none" class="mt-0.5 shrink-0">
@@ -320,61 +322,63 @@
                 </svg>
                 <div>
                     <p>&copy; 2026 AutoMind Solutions. Engineering intelligent technology for businesses worldwide.</p>
-                    <p class="mt-1 text-gray-600" data-cfg="location"></p>
+                    <p class="mt-1 text-gray-400" data-cfg="location"></p>
                 </div>
             </div>
             <div>
-                <h4 class="text-gray-300 font-semibold mb-3 uppercase tracking-wider text-[10px]">Quick Links</h4>
+                <h4 class="text-gray-700 font-semibold mb-3 uppercase tracking-wider text-[10px]">Quick Links</h4>
                 <div class="flex flex-col gap-2">
-                    <a href="services.html" class="hover:text-brand-glow transition">Services</a>
-                    <a href="projects.html" class="hover:text-brand-glow transition">Projects</a>
-                    <a href="infrastructure.html" class="hover:text-brand-glow transition">Infrastructure & VoIP</a>
-                    <a href="academy.html" class="hover:text-brand-glow transition">Academy</a>
-                    <a href="downloads.html" class="hover:text-brand-glow transition">Downloads</a>
-                    <a href="faq.html" class="hover:text-brand-glow transition">FAQ</a>
+                    <a href="services.html" class="hover:text-brand-accent transition">Services</a>
+                    <a href="projects.html" class="hover:text-brand-accent transition">Projects</a>
+                    <a href="infrastructure.html" class="hover:text-brand-accent transition">Infrastructure & VoIP</a>
+                    <a href="academy.html" class="hover:text-brand-accent transition">Academy</a>
+                    <a href="downloads.html" class="hover:text-brand-accent transition">Downloads</a>
+                    <a href="faq.html" class="hover:text-brand-accent transition">FAQ</a>
                 </div>
             </div>
             <div>
-                <h4 class="text-gray-300 font-semibold mb-3 uppercase tracking-wider text-[10px]">Connect</h4>
+                <h4 class="text-gray-700 font-semibold mb-3 uppercase tracking-wider text-[10px]">Connect</h4>
                 <div class="flex flex-col gap-2">
-                    <a href="#" data-cfg-href="email" data-cfg-href-type="mailto" class="hover:text-brand-glow transition"><i class="fa-solid fa-envelope mr-2"></i>Email</a>
-                    <a href="#" data-cfg-href="phone" data-cfg-href-type="tel" class="hidden hover:text-brand-glow transition"><i class="fa-solid fa-phone mr-2"></i><span data-cfg="phone"></span></a>
-                    <a href="#" data-cfg-href="whatsapp" data-cfg-href-type="whatsapp" target="_blank" class="hidden hover:text-brand-glow transition"><i class="fa-brands fa-whatsapp mr-2"></i>WhatsApp</a>
-                    <a href="#" data-cfg-href="linkedin" target="_blank" class="hover:text-brand-glow transition"><i class="fa-brands fa-linkedin mr-2"></i>LinkedIn</a>
-                    <a href="#" data-cfg-href="github" target="_blank" class="hidden hover:text-brand-glow transition"><i class="fa-brands fa-github mr-2"></i>GitHub</a>
-                    <a href="contact.html" class="hover:text-brand-glow transition"><i class="fa-solid fa-paper-plane mr-2"></i>Contact Form</a>
+                    <a href="#" data-cfg-href="email" data-cfg-href-type="mailto" class="hover:text-brand-accent transition"><i class="fa-solid fa-envelope mr-2"></i>Email</a>
+                    <a href="#" data-cfg-href="phone" data-cfg-href-type="tel" class="hidden hover:text-brand-accent transition"><i class="fa-solid fa-phone mr-2"></i><span data-cfg="phone"></span></a>
+                    <a href="#" data-cfg-href="whatsapp" data-cfg-href-type="whatsapp" target="_blank" class="hidden hover:text-brand-accent transition"><i class="fa-brands fa-whatsapp mr-2"></i>WhatsApp</a>
+                    <a href="#" data-cfg-href="linkedin" target="_blank" class="hover:text-brand-accent transition"><i class="fa-brands fa-linkedin mr-2"></i>LinkedIn</a>
+                    <a href="#" data-cfg-href="github" target="_blank" class="hidden hover:text-brand-accent transition"><i class="fa-brands fa-github mr-2"></i>GitHub</a>
+                    <a href="contact.html" class="hover:text-brand-accent transition"><i class="fa-solid fa-paper-plane mr-2"></i>Contact Form</a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <div class="fixed bottom-0 left-0 right-0 z-50 sm:hidden bg-brand-dark/95 backdrop-blur-md border-t border-gray-800 p-3">
-        <a href="contact.html" class="block text-center bg-brand-accent hover:bg-blue-600 text-white font-semibold py-3 rounded-xl transition shadow-xl shadow-blue-500/20 text-sm">Get Your Free Automation Audit</a>
+    <div class="fixed bottom-0 left-0 right-0 z-50 sm:hidden bg-white/95 backdrop-blur-md border-t border-gray-200 p-3">
+        <a href="contact.html" class="block text-center bg-brand-accent hover:brightness-110 text-white font-semibold py-3 rounded-full transition shadow-lg shadow-blue-900/10 text-sm">Get Your Free Automation Audit</a>
     </div>
     <div class="h-16 sm:hidden"></div>
 
-    <a href="#" data-cfg-href="whatsapp" data-cfg-href-type="whatsapp" target="_blank" rel="noopener" id="whatsapp-btn" class="hidden fixed bottom-24 sm:bottom-6 right-5 z-40 w-14 h-14 rounded-full bg-[#25D366] hover:bg-[#1ebe5a] flex items-center justify-center shadow-lg shadow-black/30 transition" aria-label="Chat on WhatsApp">
+    <!-- WhatsApp click-to-chat -->
+    <a href="#" data-cfg-href="whatsapp" data-cfg-href-type="whatsapp" target="_blank" rel="noopener" id="whatsapp-btn" class="hidden fixed bottom-24 sm:bottom-6 right-5 z-40 w-14 h-14 rounded-full bg-[#25D366] hover:bg-[#1ebe5a] flex items-center justify-center shadow-lg shadow-black/20 transition" aria-label="Chat on WhatsApp">
         <i class="fa-brands fa-whatsapp text-white text-2xl"></i>
     </a>
 
+    <!-- AutoMind Assistant chat widget -->
     <div class="fixed bottom-24 sm:bottom-6 left-5 z-40">
-        <button onclick="toggleChat()" class="w-14 h-14 rounded-full bg-brand-accent hover:bg-blue-600 flex items-center justify-center shadow-lg shadow-blue-500/30 transition neon-border" aria-label="Chat with AutoMind Assistant">
+        <button onclick="toggleChat()" class="w-14 h-14 rounded-full bg-brand-accent hover:brightness-110 flex items-center justify-center shadow-lg shadow-blue-900/20 transition neon-border" aria-label="Chat with AutoMind Assistant">
             <i class="fa-solid fa-robot text-white text-xl"></i>
         </button>
         <div id="chat-panel" class="chat-panel corner-brackets hidden">
-            <div class="flex items-center justify-between px-4 py-3 border-b border-gray-800">
+            <div class="flex items-center justify-between px-4 py-3 border-b border-gray-200">
                 <div class="flex items-center gap-2">
-                    <span class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
-                    <span class="font-display text-sm font-bold text-white">AutoMind Assistant</span>
+                    <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+                    <span class="font-display text-sm font-bold text-gray-900">AutoMind Assistant</span>
                 </div>
-                <button onclick="toggleChat()" class="text-gray-500 hover:text-white text-sm"><i class="fa-solid fa-xmark"></i></button>
+                <button onclick="toggleChat()" class="text-gray-400 hover:text-gray-900 text-sm"><i class="fa-solid fa-xmark"></i></button>
             </div>
             <div id="chat-log" class="chat-log px-3 py-3 space-y-2"></div>
-            <div class="flex items-center gap-2 px-3 py-3 border-t border-gray-800">
-                <input id="chat-input" type="text" onkeydown="chatKeydown(event)" placeholder="Ask about services, pricing..." class="flex-1 bg-brand-dark border border-gray-700 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-brand-accent">
-                <button onclick="sendChatMessage()" class="bg-brand-accent hover:bg-blue-600 text-white w-8 h-8 rounded-lg flex items-center justify-center shrink-0"><i class="fa-solid fa-paper-plane text-xs"></i></button>
+            <div class="flex items-center gap-2 px-3 py-3 border-t border-gray-200">
+                <input id="chat-input" type="text" onkeydown="chatKeydown(event)" placeholder="Ask about services, pricing..." class="flex-1 bg-white border border-gray-300 rounded-lg px-3 py-2 text-xs text-gray-900 focus:outline-none focus:border-brand-accent">
+                <button onclick="sendChatMessage()" class="bg-brand-accent hover:brightness-110 text-white w-8 h-8 rounded-lg flex items-center justify-center shrink-0"><i class="fa-solid fa-paper-plane text-xs"></i></button>
             </div>
-            <p class="text-[10px] text-gray-600 text-center pb-2 px-3">Scripted assistant, not live AI — for anything else, tap WhatsApp or email.</p>
+            <p class="text-[10px] text-gray-400 text-center pb-2 px-3">Scripted assistant, not live AI — for anything else, tap WhatsApp or email.</p>
         </div>
     </div>
 
