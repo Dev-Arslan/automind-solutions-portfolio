@@ -167,6 +167,50 @@ function filterDownloads(query) {
     if (empty) empty.classList.toggle('hidden', visibleCount !== 0 || cards.length === 0);
 }
 
+/* ============ Industries slider ============
+   Big full-width slides, one per industry, auto-advancing right-to-left
+   with dot navigation. Pauses autoplay on manual interaction/hover. */
+let industryIndex = 0;
+let industryTimer = null;
+const INDUSTRY_COUNT = 12;
+const INDUSTRY_INTERVAL = 4500;
+
+function industryGoTo(i) {
+    const track = document.getElementById('industry-slides');
+    if (!track) return;
+    industryIndex = ((i % INDUSTRY_COUNT) + INDUSTRY_COUNT) % INDUSTRY_COUNT;
+    track.style.transform = `translateX(-${industryIndex * 100}%)`;
+    document.querySelectorAll('.industry-dot').forEach((dot, idx) => {
+        dot.classList.toggle('is-active', idx === industryIndex);
+    });
+}
+
+function industryNext() { industryGoTo(industryIndex + 1); }
+
+function startIndustryAutoplay() {
+    stopIndustryAutoplay();
+    industryTimer = setInterval(industryNext, INDUSTRY_INTERVAL);
+}
+
+function stopIndustryAutoplay() {
+    if (industryTimer) clearInterval(industryTimer);
+    industryTimer = null;
+}
+
+function initIndustrySlider() {
+    const track = document.getElementById('industry-slides');
+    if (!track) return;
+    startIndustryAutoplay();
+    const wrap = track.closest('.corner-brackets');
+    if (wrap) {
+        wrap.addEventListener('mouseenter', stopIndustryAutoplay);
+        wrap.addEventListener('mouseleave', startIndustryAutoplay);
+    }
+    document.querySelectorAll('.industry-dot').forEach(dot => {
+        dot.addEventListener('click', startIndustryAutoplay);
+    });
+}
+
 /* ============ Scroll-reveal ============ */
 function initReveal() {
     const observer = new IntersectionObserver((entries) => {
@@ -345,4 +389,5 @@ document.addEventListener('DOMContentLoaded', () => {
     mountTechLines();
     loadDownloads();
     applyInterestFromQuery();
+    initIndustrySlider();
 });

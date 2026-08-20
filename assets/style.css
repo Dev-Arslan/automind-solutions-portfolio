@@ -29,21 +29,14 @@ html { scroll-behavior: smooth; }
 /* ---- Card hover ---- */
 .card-hover { transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease; }
 
-/* ---- Industry marquee ---- */
-.marquee-wrap {
-    overflow: hidden;
-    -webkit-mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);
-    mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);
+/* ---- Industry slider dots ---- */
+.industry-dot {
+    width: 8px; height: 8px; border-radius: 9999px; background: #374151; border: none; padding: 0; cursor: pointer;
+    transition: width .35s ease, background-color .35s ease;
 }
-.marquee-track { display: flex; width: max-content; animation: marqueeScroll 38s linear infinite; }
-.marquee-track:hover { animation-play-state: paused; }
-@keyframes marqueeScroll {
-    from { transform: translateX(0); }
-    to { transform: translateX(-50%); }
-}
+.industry-dot.is-active { width: 24px; background: #3B82F6; }
 @media (prefers-reduced-motion: reduce) {
-    .marquee-track { animation: none; }
-    .marquee-wrap { overflow-x: auto; }
+    #industry-slides { transition: none !important; }
 }
 .card-hover:hover { transform: translateY(-4px); box-shadow: 0 20px 40px -20px rgba(59,130,246,0.35); }
 
