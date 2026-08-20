@@ -173,7 +173,7 @@ function filterDownloads(query) {
 let industryIndex = 0;
 let industryTimer = null;
 const INDUSTRY_COUNT = 12;
-const INDUSTRY_INTERVAL = 4500;
+const INDUSTRY_INTERVAL = 2200;
 
 function industryGoTo(i) {
     const track = document.getElementById('industry-slides');
