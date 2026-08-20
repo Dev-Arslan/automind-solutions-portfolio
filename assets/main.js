@@ -77,7 +77,7 @@ const TECH_LINES_SVG = `
 </svg>`;
 
 function mountTechLines() {
-    document.querySelectorAll('.tech-lines-mount').forEach(el => { el.innerHTML = TECH_LINES_SVG; });
+    // Retired for the light B2B theme — .tech-lines-mount elements stay empty.
 }
 
 /* ============ Downloads page ============
@@ -106,17 +106,17 @@ function renderDownloads(items) {
     list.innerHTML = items.map((item, i) => {
         const searchBlob = (item.name + ' ' + item.description).toLowerCase().replace(/"/g, '&quot;');
         return `
-        <div class="corner-brackets bg-brand-card border border-gray-800 rounded-xl overflow-hidden card-hover download-card flex flex-col" data-search="${searchBlob}">
-            <img src="${item.image}" alt="${item.name}" class="w-full h-32 object-cover border-b border-gray-800" onerror="this.style.display='none'">
+        <div class="corner-brackets bg-white border border-gray-200 rounded-xl overflow-hidden card-hover download-card flex flex-col" data-search="${searchBlob}">
+            <img src="${item.image}" alt="${item.name}" class="w-full h-32 object-cover border-b border-gray-200" onerror="this.style.display='none'">
             <div class="p-4 flex flex-col flex-1">
                 <div class="flex items-center gap-1.5 mb-2 flex-wrap">
-                    <span class="text-[10px] font-mono text-gray-500 border border-gray-800 rounded-full px-2 py-0.5">${item.version}</span>
-                    <span class="text-[10px] font-mono text-gray-500 border border-gray-800 rounded-full px-2 py-0.5">${item.platform}</span>
-                    <span id="dl-count-${i}" class="hidden text-[10px] font-mono text-green-400 border border-green-500/20 bg-green-500/10 rounded-full px-2 py-0.5"><i class="fa-solid fa-download mr-1"></i><span class="count-value"></span></span>
+                    <span class="text-[10px] font-mono text-gray-500 border border-gray-200 rounded-full px-2 py-0.5">${item.version}</span>
+                    <span class="text-[10px] font-mono text-gray-500 border border-gray-200 rounded-full px-2 py-0.5">${item.platform}</span>
+                    <span id="dl-count-${i}" class="hidden text-[10px] font-mono text-green-700 border border-green-600/20 bg-green-50 rounded-full px-2 py-0.5"><i class="fa-solid fa-download mr-1"></i><span class="count-value"></span></span>
                 </div>
-                <h2 class="font-display text-sm font-bold text-white mb-1.5">${item.name}</h2>
-                <p class="text-gray-400 text-[11px] leading-relaxed mb-3 flex-1">${item.description}</p>
-                <button type="button" onclick="triggerDownload(${i})" class="btn-gradient text-white text-xs font-semibold px-4 py-2 rounded-lg text-center">Download <i class="fa-solid fa-arrow-down text-[10px] ml-1"></i></button>
+                <h2 class="font-display text-sm font-bold text-gray-900 mb-1.5">${item.name}</h2>
+                <p class="text-gray-500 text-[11px] leading-relaxed mb-3 flex-1">${item.description}</p>
+                <button type="button" onclick="triggerDownload(${i})" class="btn-gradient text-white text-xs font-semibold px-4 py-2 rounded-full text-center">Download <i class="fa-solid fa-arrow-down text-[10px] ml-1"></i></button>
             </div>
         </div>`;
     }).join('');
@@ -316,7 +316,7 @@ function appendChatMessage(text, sender) {
     const bubble = document.createElement('div');
     bubble.className = sender === 'user'
         ? 'max-w-[85%] bg-brand-accent text-white text-xs rounded-xl rounded-tr-sm px-3.5 py-2.5'
-        : 'max-w-[85%] bg-brand-dark border border-gray-800 text-gray-200 text-xs rounded-xl rounded-tl-sm px-3.5 py-2.5';
+        : 'max-w-[85%] bg-gray-100 border border-gray-200 text-gray-700 text-xs rounded-xl rounded-tl-sm px-3.5 py-2.5';
     bubble.textContent = text;
     row.appendChild(bubble);
     log.appendChild(row);
@@ -332,7 +332,7 @@ function appendChatQuickReplies(options) {
         const btn = document.createElement('button');
         btn.type = 'button';
         btn.textContent = opt.label;
-        btn.className = 'text-[11px] font-medium px-3 py-1.5 rounded-full border border-gray-700 text-gray-200 hover:border-brand-accent transition';
+        btn.className = 'text-[11px] font-medium px-3 py-1.5 rounded-full border border-gray-300 text-gray-700 hover:border-brand-accent hover:text-brand-accent transition';
         btn.onclick = () => { wrap.remove(); opt.onClick(); };
         wrap.appendChild(btn);
     });
