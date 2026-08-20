@@ -187,13 +187,28 @@
                 <h2 class="font-display text-2xl font-bold md:text-3xl">Built For Your Industry</h2>
                 <p class="text-gray-400 mt-3 text-sm max-w-xl mx-auto">From local shops to regulated institutions — automation and software scoped to how your industry actually works.</p>
             </div>
+            <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+                <defs>
+                    <linearGradient id="indGradBlue" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#60A5FA"/><stop offset="100%" stop-color="#22D3EE"/></linearGradient>
+                    <linearGradient id="indGradViolet" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#8B5CF6"/><stop offset="100%" stop-color="#C084FC"/></linearGradient>
+                    <linearGradient id="indGradAmber" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#F59E0B"/><stop offset="100%" stop-color="#FB923C"/></linearGradient>
+                </defs>
+            </svg>
             <div class="corner-brackets border border-gray-800 rounded-2xl p-1.5">
                 <div class="relative overflow-hidden rounded-xl">
                     <div id="industry-slides" class="flex" style="transition: transform .7s cubic-bezier(.65,0,.35,1);">
                         <div class="w-full shrink-0 relative h-72 sm:h-80 md:h-[26rem] overflow-hidden">
                             <div class="absolute inset-0 bg-gradient-to-br from-blue-600/40 via-brand-dark to-brand-dark"></div>
                             <div class="absolute inset-0 dot-grid opacity-10"></div>
-                            <i class="fa-solid fa-building absolute -right-8 -bottom-10 text-[13rem] text-white/5 pointer-events-none"></i>
+                            <div class="absolute right-2 bottom-0 md:right-8 md:bottom-2 w-40 h-40 md:w-60 md:h-60 pointer-events-none">
+                                <div class="absolute inset-0 rounded-full blur-3xl opacity-30 bg-blue-500"></div>
+                                <svg viewBox="0 0 200 200" class="relative w-full h-full drop-shadow-[0_10px_25px_rgba(0,0,0,0.45)]">
+                                    <path d="M40 190 L40 100 L100 50 L160 100 L160 190 Z" fill="url(#indGradBlue)" opacity="0.92"/>
+                                    <rect x="85" y="140" width="30" height="50" fill="#0B0F19" opacity="0.85"/>
+                                    <rect x="55" y="115" width="20" height="20" rx="2" fill="#0B0F19" opacity="0.85"/>
+                                    <rect x="125" y="115" width="20" height="20" rx="2" fill="#0B0F19" opacity="0.85"/>
+                                </svg>
+                            </div>
                             <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/50 to-transparent"></div>
                             <div class="absolute bottom-0 left-0 p-6 md:p-10">
                                 <span class="text-[11px] font-mono text-brand-glow bg-blue-500/10 border border-brand-glow/30 px-3 py-1 rounded-full mb-3 inline-block">01 / 12</span>
@@ -204,7 +219,18 @@
                         <div class="w-full shrink-0 relative h-72 sm:h-80 md:h-[26rem] overflow-hidden">
                             <div class="absolute inset-0 bg-gradient-to-br from-violet-600/40 via-brand-dark to-brand-dark"></div>
                             <div class="absolute inset-0 dot-grid opacity-10"></div>
-                            <i class="fa-solid fa-hotel absolute -right-8 -bottom-10 text-[13rem] text-white/5 pointer-events-none"></i>
+                            <div class="absolute right-2 bottom-0 md:right-8 md:bottom-2 w-40 h-40 md:w-60 md:h-60 pointer-events-none">
+                                <div class="absolute inset-0 rounded-full blur-3xl opacity-30 bg-violet-500"></div>
+                                <svg viewBox="0 0 200 200" class="relative w-full h-full drop-shadow-[0_10px_25px_rgba(0,0,0,0.45)]">
+                                    <rect x="30" y="120" width="140" height="50" rx="8" fill="url(#indGradViolet)" opacity="0.92"/>
+                                    <rect x="30" y="98" width="45" height="30" rx="6" fill="url(#indGradViolet)" opacity="0.92"/>
+                                    <rect x="35" y="170" width="8" height="20" fill="url(#indGradViolet)" opacity="0.92"/>
+                                    <rect x="157" y="170" width="8" height="20" fill="url(#indGradViolet)" opacity="0.92"/>
+                                    <circle cx="150" cy="55" r="6" fill="url(#indGradViolet)"/>
+                                    <circle cx="172" cy="78" r="4" fill="url(#indGradViolet)"/>
+                                    <circle cx="128" cy="42" r="4" fill="url(#indGradViolet)"/>
+                                </svg>
+                            </div>
                             <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/50 to-transparent"></div>
                             <div class="absolute bottom-0 left-0 p-6 md:p-10">
                                 <span class="text-[11px] font-mono text-violet-400 bg-violet-500/10 border border-violet-400/30 px-3 py-1 rounded-full mb-3 inline-block">02 / 12</span>
@@ -215,7 +241,13 @@
                         <div class="w-full shrink-0 relative h-72 sm:h-80 md:h-[26rem] overflow-hidden">
                             <div class="absolute inset-0 bg-gradient-to-br from-amber-600/40 via-brand-dark to-brand-dark"></div>
                             <div class="absolute inset-0 dot-grid opacity-10"></div>
-                            <i class="fa-solid fa-hospital absolute -right-8 -bottom-10 text-[13rem] text-white/5 pointer-events-none"></i>
+                            <div class="absolute right-2 bottom-0 md:right-8 md:bottom-2 w-40 h-40 md:w-60 md:h-60 pointer-events-none">
+                                <div class="absolute inset-0 rounded-full blur-3xl opacity-30 bg-amber-500"></div>
+                                <svg viewBox="0 0 200 200" class="relative w-full h-full drop-shadow-[0_10px_25px_rgba(0,0,0,0.45)]">
+                                    <path d="M85 35 H115 V80 H160 V110 H115 V155 H85 V110 H40 V80 H85 Z" fill="url(#indGradAmber)" opacity="0.92"/>
+                                    <path d="M15 178 H60 L75 152 L92 190 L108 158 L122 178 H185" stroke="url(#indGradAmber)" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+                                </svg>
+                            </div>
                             <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/50 to-transparent"></div>
                             <div class="absolute bottom-0 left-0 p-6 md:p-10">
                                 <span class="text-[11px] font-mono text-brand-amber bg-amber-500/10 border border-brand-amber/30 px-3 py-1 rounded-full mb-3 inline-block">03 / 12</span>
@@ -226,7 +258,18 @@
                         <div class="w-full shrink-0 relative h-72 sm:h-80 md:h-[26rem] overflow-hidden">
                             <div class="absolute inset-0 bg-gradient-to-br from-violet-600/40 via-brand-dark to-brand-dark"></div>
                             <div class="absolute inset-0 dot-grid opacity-10"></div>
-                            <i class="fa-solid fa-landmark absolute -right-8 -bottom-10 text-[13rem] text-white/5 pointer-events-none"></i>
+                            <div class="absolute right-2 bottom-0 md:right-8 md:bottom-2 w-40 h-40 md:w-60 md:h-60 pointer-events-none">
+                                <div class="absolute inset-0 rounded-full blur-3xl opacity-30 bg-violet-500"></div>
+                                <svg viewBox="0 0 200 200" class="relative w-full h-full drop-shadow-[0_10px_25px_rgba(0,0,0,0.45)]">
+                                    <polygon points="100,30 172,72 28,72" fill="url(#indGradViolet)" opacity="0.92"/>
+                                    <rect x="28" y="72" width="144" height="12" fill="url(#indGradViolet)" opacity="0.92"/>
+                                    <rect x="42" y="94" width="14" height="70" fill="url(#indGradViolet)" opacity="0.92"/>
+                                    <rect x="80" y="94" width="14" height="70" fill="url(#indGradViolet)" opacity="0.92"/>
+                                    <rect x="106" y="94" width="14" height="70" fill="url(#indGradViolet)" opacity="0.92"/>
+                                    <rect x="144" y="94" width="14" height="70" fill="url(#indGradViolet)" opacity="0.92"/>
+                                    <rect x="24" y="170" width="152" height="14" fill="url(#indGradViolet)" opacity="0.92"/>
+                                </svg>
+                            </div>
                             <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/50 to-transparent"></div>
                             <div class="absolute bottom-0 left-0 p-6 md:p-10">
                                 <span class="text-[11px] font-mono text-violet-400 bg-violet-500/10 border border-violet-400/30 px-3 py-1 rounded-full mb-3 inline-block">04 / 12</span>
@@ -237,7 +280,16 @@
                         <div class="w-full shrink-0 relative h-72 sm:h-80 md:h-[26rem] overflow-hidden">
                             <div class="absolute inset-0 bg-gradient-to-br from-blue-600/40 via-brand-dark to-brand-dark"></div>
                             <div class="absolute inset-0 dot-grid opacity-10"></div>
-                            <i class="fa-solid fa-graduation-cap absolute -right-8 -bottom-10 text-[13rem] text-white/5 pointer-events-none"></i>
+                            <div class="absolute right-2 bottom-0 md:right-8 md:bottom-2 w-40 h-40 md:w-60 md:h-60 pointer-events-none">
+                                <div class="absolute inset-0 rounded-full blur-3xl opacity-30 bg-blue-500"></div>
+                                <svg viewBox="0 0 200 200" class="relative w-full h-full drop-shadow-[0_10px_25px_rgba(0,0,0,0.45)]">
+                                    <polygon points="100,55 180,90 100,125 20,90" fill="url(#indGradBlue)" opacity="0.92"/>
+                                    <path d="M55 98 V125 Q100 145 145 125 V98" fill="none" stroke="url(#indGradBlue)" stroke-width="6" opacity="0.85"/>
+                                    <line x1="170" y1="95" x2="170" y2="130" stroke="url(#indGradBlue)" stroke-width="4"/>
+                                    <circle cx="170" cy="136" r="6" fill="url(#indGradBlue)"/>
+                                    <rect x="52" y="150" width="96" height="16" rx="3" fill="url(#indGradBlue)" opacity="0.92"/>
+                                </svg>
+                            </div>
                             <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/50 to-transparent"></div>
                             <div class="absolute bottom-0 left-0 p-6 md:p-10">
                                 <span class="text-[11px] font-mono text-brand-glow bg-blue-500/10 border border-brand-glow/30 px-3 py-1 rounded-full mb-3 inline-block">05 / 12</span>
@@ -248,7 +300,16 @@
                         <div class="w-full shrink-0 relative h-72 sm:h-80 md:h-[26rem] overflow-hidden">
                             <div class="absolute inset-0 bg-gradient-to-br from-amber-600/40 via-brand-dark to-brand-dark"></div>
                             <div class="absolute inset-0 dot-grid opacity-10"></div>
-                            <i class="fa-solid fa-utensils absolute -right-8 -bottom-10 text-[13rem] text-white/5 pointer-events-none"></i>
+                            <div class="absolute right-2 bottom-0 md:right-8 md:bottom-2 w-40 h-40 md:w-60 md:h-60 pointer-events-none">
+                                <div class="absolute inset-0 rounded-full blur-3xl opacity-30 bg-amber-500"></div>
+                                <svg viewBox="0 0 200 200" class="relative w-full h-full drop-shadow-[0_10px_25px_rgba(0,0,0,0.45)]">
+                                    <circle cx="115" cy="110" r="55" fill="none" stroke="url(#indGradAmber)" stroke-width="8" opacity="0.92"/>
+                                    <circle cx="115" cy="110" r="34" fill="none" stroke="url(#indGradAmber)" stroke-width="4" opacity="0.55"/>
+                                    <line x1="35" y1="50" x2="35" y2="175" stroke="url(#indGradAmber)" stroke-width="6" stroke-linecap="round" opacity="0.92"/>
+                                    <line x1="26" y1="50" x2="26" y2="80" stroke="url(#indGradAmber)" stroke-width="4" stroke-linecap="round" opacity="0.92"/>
+                                    <line x1="44" y1="50" x2="44" y2="80" stroke="url(#indGradAmber)" stroke-width="4" stroke-linecap="round" opacity="0.92"/>
+                                </svg>
+                            </div>
                             <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/50 to-transparent"></div>
                             <div class="absolute bottom-0 left-0 p-6 md:p-10">
                                 <span class="text-[11px] font-mono text-brand-amber bg-amber-500/10 border border-brand-amber/30 px-3 py-1 rounded-full mb-3 inline-block">06 / 12</span>
@@ -259,7 +320,15 @@
                         <div class="w-full shrink-0 relative h-72 sm:h-80 md:h-[26rem] overflow-hidden">
                             <div class="absolute inset-0 bg-gradient-to-br from-blue-600/40 via-brand-dark to-brand-dark"></div>
                             <div class="absolute inset-0 dot-grid opacity-10"></div>
-                            <i class="fa-solid fa-cart-shopping absolute -right-8 -bottom-10 text-[13rem] text-white/5 pointer-events-none"></i>
+                            <div class="absolute right-2 bottom-0 md:right-8 md:bottom-2 w-40 h-40 md:w-60 md:h-60 pointer-events-none">
+                                <div class="absolute inset-0 rounded-full blur-3xl opacity-30 bg-blue-500"></div>
+                                <svg viewBox="0 0 200 200" class="relative w-full h-full drop-shadow-[0_10px_25px_rgba(0,0,0,0.45)]">
+                                    <path d="M55 80 L62 48 Q70 30 100 30 Q130 30 138 48 L145 80" fill="none" stroke="url(#indGradBlue)" stroke-width="7" opacity="0.9"/>
+                                    <rect x="40" y="80" width="120" height="100" rx="10" fill="url(#indGradBlue)" opacity="0.92"/>
+                                    <circle cx="100" cy="130" r="18" fill="#0B0F19" opacity="0.85"/>
+                                    <circle cx="100" cy="130" r="6" fill="url(#indGradBlue)"/>
+                                </svg>
+                            </div>
                             <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/50 to-transparent"></div>
                             <div class="absolute bottom-0 left-0 p-6 md:p-10">
                                 <span class="text-[11px] font-mono text-brand-glow bg-blue-500/10 border border-brand-glow/30 px-3 py-1 rounded-full mb-3 inline-block">07 / 12</span>
@@ -270,7 +339,20 @@
                         <div class="w-full shrink-0 relative h-72 sm:h-80 md:h-[26rem] overflow-hidden">
                             <div class="absolute inset-0 bg-gradient-to-br from-violet-600/40 via-brand-dark to-brand-dark"></div>
                             <div class="absolute inset-0 dot-grid opacity-10"></div>
-                            <i class="fa-solid fa-scale-balanced absolute -right-8 -bottom-10 text-[13rem] text-white/5 pointer-events-none"></i>
+                            <div class="absolute right-2 bottom-0 md:right-8 md:bottom-2 w-40 h-40 md:w-60 md:h-60 pointer-events-none">
+                                <div class="absolute inset-0 rounded-full blur-3xl opacity-30 bg-violet-500"></div>
+                                <svg viewBox="0 0 200 200" class="relative w-full h-full drop-shadow-[0_10px_25px_rgba(0,0,0,0.45)]">
+                                    <rect x="96" y="35" width="8" height="130" fill="url(#indGradViolet)" opacity="0.92"/>
+                                    <rect x="35" y="58" width="130" height="6" fill="url(#indGradViolet)" opacity="0.92"/>
+                                    <line x1="45" y1="64" x2="28" y2="95" stroke="url(#indGradViolet)" stroke-width="3" opacity="0.85"/>
+                                    <line x1="45" y1="64" x2="62" y2="95" stroke="url(#indGradViolet)" stroke-width="3" opacity="0.85"/>
+                                    <path d="M18 96 Q45 118 72 96" fill="none" stroke="url(#indGradViolet)" stroke-width="5" opacity="0.85"/>
+                                    <line x1="155" y1="64" x2="138" y2="95" stroke="url(#indGradViolet)" stroke-width="3" opacity="0.85"/>
+                                    <line x1="155" y1="64" x2="172" y2="95" stroke="url(#indGradViolet)" stroke-width="3" opacity="0.85"/>
+                                    <path d="M128 96 Q155 118 182 96" fill="none" stroke="url(#indGradViolet)" stroke-width="5" opacity="0.85"/>
+                                    <polygon points="72,175 128,175 112,158 88,158" fill="url(#indGradViolet)" opacity="0.92"/>
+                                </svg>
+                            </div>
                             <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/50 to-transparent"></div>
                             <div class="absolute bottom-0 left-0 p-6 md:p-10">
                                 <span class="text-[11px] font-mono text-violet-400 bg-violet-500/10 border border-violet-400/30 px-3 py-1 rounded-full mb-3 inline-block">08 / 12</span>
@@ -281,7 +363,18 @@
                         <div class="w-full shrink-0 relative h-72 sm:h-80 md:h-[26rem] overflow-hidden">
                             <div class="absolute inset-0 bg-gradient-to-br from-amber-600/40 via-brand-dark to-brand-dark"></div>
                             <div class="absolute inset-0 dot-grid opacity-10"></div>
-                            <i class="fa-solid fa-truck-fast absolute -right-8 -bottom-10 text-[13rem] text-white/5 pointer-events-none"></i>
+                            <div class="absolute right-2 bottom-0 md:right-8 md:bottom-2 w-40 h-40 md:w-60 md:h-60 pointer-events-none">
+                                <div class="absolute inset-0 rounded-full blur-3xl opacity-30 bg-amber-500"></div>
+                                <svg viewBox="0 0 200 200" class="relative w-full h-full drop-shadow-[0_10px_25px_rgba(0,0,0,0.45)]">
+                                    <rect x="30" y="70" width="90" height="70" rx="6" fill="url(#indGradAmber)" opacity="0.92"/>
+                                    <path d="M120 95 H162 L178 118 V140 H120 Z" fill="url(#indGradAmber)" opacity="0.92"/>
+                                    <circle cx="65" cy="152" r="15" fill="#0B0F19"/><circle cx="65" cy="152" r="6" fill="url(#indGradAmber)"/>
+                                    <circle cx="150" cy="152" r="15" fill="#0B0F19"/><circle cx="150" cy="152" r="6" fill="url(#indGradAmber)"/>
+                                    <line x1="5" y1="85" x2="24" y2="85" stroke="url(#indGradAmber)" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
+                                    <line x1="0" y1="100" x2="22" y2="100" stroke="url(#indGradAmber)" stroke-width="4" stroke-linecap="round" opacity="0.85"/>
+                                    <line x1="5" y1="115" x2="24" y2="115" stroke="url(#indGradAmber)" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
+                                </svg>
+                            </div>
                             <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/50 to-transparent"></div>
                             <div class="absolute bottom-0 left-0 p-6 md:p-10">
                                 <span class="text-[11px] font-mono text-brand-amber bg-amber-500/10 border border-brand-amber/30 px-3 py-1 rounded-full mb-3 inline-block">09 / 12</span>
@@ -292,7 +385,13 @@
                         <div class="w-full shrink-0 relative h-72 sm:h-80 md:h-[26rem] overflow-hidden">
                             <div class="absolute inset-0 bg-gradient-to-br from-violet-600/40 via-brand-dark to-brand-dark"></div>
                             <div class="absolute inset-0 dot-grid opacity-10"></div>
-                            <i class="fa-solid fa-shield-heart absolute -right-8 -bottom-10 text-[13rem] text-white/5 pointer-events-none"></i>
+                            <div class="absolute right-2 bottom-0 md:right-8 md:bottom-2 w-40 h-40 md:w-60 md:h-60 pointer-events-none">
+                                <div class="absolute inset-0 rounded-full blur-3xl opacity-30 bg-violet-500"></div>
+                                <svg viewBox="0 0 200 200" class="relative w-full h-full drop-shadow-[0_10px_25px_rgba(0,0,0,0.45)]">
+                                    <path d="M100 25 L165 52 V100 Q165 152 100 178 Q35 152 35 100 V52 Z" fill="url(#indGradViolet)" opacity="0.92"/>
+                                    <path d="M72 103 L92 123 L130 80" stroke="#0B0F19" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
+                                </svg>
+                            </div>
                             <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/50 to-transparent"></div>
                             <div class="absolute bottom-0 left-0 p-6 md:p-10">
                                 <span class="text-[11px] font-mono text-violet-400 bg-violet-500/10 border border-violet-400/30 px-3 py-1 rounded-full mb-3 inline-block">10 / 12</span>
@@ -303,7 +402,17 @@
                         <div class="w-full shrink-0 relative h-72 sm:h-80 md:h-[26rem] overflow-hidden">
                             <div class="absolute inset-0 bg-gradient-to-br from-blue-600/40 via-brand-dark to-brand-dark"></div>
                             <div class="absolute inset-0 dot-grid opacity-10"></div>
-                            <i class="fa-solid fa-dumbbell absolute -right-8 -bottom-10 text-[13rem] text-white/5 pointer-events-none"></i>
+                            <div class="absolute right-2 bottom-0 md:right-8 md:bottom-2 w-40 h-40 md:w-60 md:h-60 pointer-events-none">
+                                <div class="absolute inset-0 rounded-full blur-3xl opacity-30 bg-blue-500"></div>
+                                <svg viewBox="0 0 200 200" class="relative w-full h-full drop-shadow-[0_10px_25px_rgba(0,0,0,0.45)]">
+                                    <path d="M15 65 H65 L82 32 L100 88 L118 42 L135 65 H185" stroke="url(#indGradBlue)" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.5"/>
+                                    <rect x="58" y="100" width="84" height="14" rx="4" fill="url(#indGradBlue)" opacity="0.92"/>
+                                    <rect x="32" y="80" width="20" height="54" rx="6" fill="url(#indGradBlue)" opacity="0.92"/>
+                                    <rect x="16" y="90" width="14" height="34" rx="4" fill="url(#indGradBlue)" opacity="0.92"/>
+                                    <rect x="148" y="80" width="20" height="54" rx="6" fill="url(#indGradBlue)" opacity="0.92"/>
+                                    <rect x="170" y="90" width="14" height="34" rx="4" fill="url(#indGradBlue)" opacity="0.92"/>
+                                </svg>
+                            </div>
                             <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/50 to-transparent"></div>
                             <div class="absolute bottom-0 left-0 p-6 md:p-10">
                                 <span class="text-[11px] font-mono text-brand-glow bg-blue-500/10 border border-brand-glow/30 px-3 py-1 rounded-full mb-3 inline-block">11 / 12</span>
@@ -314,7 +423,13 @@
                         <div class="w-full shrink-0 relative h-72 sm:h-80 md:h-[26rem] overflow-hidden">
                             <div class="absolute inset-0 bg-gradient-to-br from-amber-600/40 via-brand-dark to-brand-dark"></div>
                             <div class="absolute inset-0 dot-grid opacity-10"></div>
-                            <i class="fa-solid fa-hand-holding-heart absolute -right-8 -bottom-10 text-[13rem] text-white/5 pointer-events-none"></i>
+                            <div class="absolute right-2 bottom-0 md:right-8 md:bottom-2 w-40 h-40 md:w-60 md:h-60 pointer-events-none">
+                                <div class="absolute inset-0 rounded-full blur-3xl opacity-30 bg-amber-500"></div>
+                                <svg viewBox="0 0 200 200" class="relative w-full h-full drop-shadow-[0_10px_25px_rgba(0,0,0,0.45)]">
+                                    <path d="M30 148 Q65 122 100 145 Q135 122 170 148 L164 176 Q100 198 36 176 Z" fill="url(#indGradAmber)" opacity="0.85"/>
+                                    <path d="M100 88 C90 66 53 66 53 98 C53 125 100 158 100 158 C100 158 147 125 147 98 C147 66 110 66 100 88 Z" fill="url(#indGradAmber)" opacity="0.95"/>
+                                </svg>
+                            </div>
                             <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/50 to-transparent"></div>
                             <div class="absolute bottom-0 left-0 p-6 md:p-10">
                                 <span class="text-[11px] font-mono text-brand-amber bg-amber-500/10 border border-brand-amber/30 px-3 py-1 rounded-full mb-3 inline-block">12 / 12</span>
